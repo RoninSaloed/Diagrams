@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Diagrams</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sliderFirst">
+            <output for="firstInput" id="volumeFirst">0</output>
+            <input id="firstInput" step="1" type="range" class="storage" min="0" max="1000" value="0"
+                oninput="outputUpdate1(value)">
+            Storage
+        </div>
+        <div class="sliderSecond">
+            <output for="secondInput" id="volumeSecond">0</output>
+            <input id="secondInput" step="1" type="range" class="transfer" min="0" max="1000" value="0"
+                oninput="outputUpdate2(value)">
+            Transfer
+        </div>
+        <div class="box">
+            <div class="boxColumn">
+                <ul class="column">
+                    <div class="columnBody">
+                        <div class="outBackblaze"></div>
+                        <li class="backblazeColumn"></li>
+                        <div class="backblaze">backblaze</div>
+                    </div>
+                    <div class="columnBody">
+                        <div class="outBunny"></div>
+                        <li class="bunnyColumn"></li>
+                        <div class="">bunny</div>
+                        <div class="bunnySelect">
+                            <div class="hdd">
+                                <input class="storage2" type="radio" name="storage" value="0.01">HDD
+                            </div>
+                            <div class="ssd">
+                                <input class="storage2" type="radio" name="storage" value="0.02">SSD
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnBody">
+                        <div class="scalewayOut"></div>
+                        <li class="scalewayColumn"></li>
+                        <div class="">scaleway</div>
+                        <div class="scalewaySelect">
+                            <div class="multi">
+                                <input class="scaleway" type="radio" name="scaleway" value="0.06">Multi
+                            </div>
+                            <div class="single">
+                                <input class="scaleway" type="radio" name="scaleway" value="0.03">Single
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnBody">
+                        <div class="vultrOut"></div>
+                        <li class="vultrColumn"></li>
+                        <div class="vultr">vultr</div>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+<script src="./js/index.js"></script>
+
+</html>

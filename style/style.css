@@ -1,0 +1,223 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.wrapper {
+  padding: 20px 20px;
+}
+
+.sliderFirst {
+  position: relative;
+  border-radius: 5px;
+  margin: 10px 0 0 0;
+  background: #f4f4f4;
+  width: 200px;
+}
+
+#volumeFirst {
+  position: absolute;
+  left: -5px;
+  top: -20px;
+  padding: 1px 6px;
+  background-color: #7d04be;
+  color: #fff;
+  border-radius: 10px 10px 0 10px;
+  font-weight: bold;
+}
+
+#firstInput {
+  position: relative;
+  left: 3px;
+  top: 5px;
+  background: #7d04be;
+  height: 7px;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+#firstInput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #7d04be;
+  -webkit-box-shadow: 0 0 2px #222;
+          box-shadow: 0 0 2px #222;
+}
+
+.sliderSecond {
+  position: relative;
+  border-radius: 5px;
+  margin: 40px 0 20px 0;
+  background: #f4f4f4;
+  width: 200px;
+}
+
+#volumeSecond {
+  position: absolute;
+  left: -5px;
+  top: -20px;
+  padding: 1px 6px;
+  background-color: #7d04be;
+  color: #fff;
+  border-radius: 10px 10px 0 10px;
+  font-weight: bold;
+}
+
+#secondInput {
+  position: relative;
+  left: 3px;
+  top: 5px;
+  background: #7d04be;
+  height: 7px;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+#secondInput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #7d04be;
+  -webkit-box-shadow: 0 0 2px #222;
+          box-shadow: 0 0 2px #222;
+}
+
+.column {
+  width: 550px;
+  height: 300px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.column li {
+  width: 100px;
+  text-align: center;
+}
+
+.backblazeColumn {
+  background-color: #b19f9f;
+}
+
+.bunnyColumn {
+  background-color: #1704c6;
+}
+
+.scalewayColumn {
+  background-color: #b19f9f;
+}
+
+.vultrColumn {
+  background-color: #b19f9f;
+}
+
+.columnBody {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.bunnySelect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10px;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.scalewaySelect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 10px;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.vultr {
+  margin: 0 0 21px 0;
+}
+
+.backblaze {
+  margin: 0 0 21px 0;
+}
