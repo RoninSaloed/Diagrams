@@ -170,4 +170,9 @@ function culcHeight() {
 culcHeight()
 storage.addEventListener("input", culcHeight)
 transfer.addEventListener("input", culcHeight)
-
+scalewayRadio.forEach(scalewayRadio => {
+    scalewayRadio.addEventListener("click", culcHeight)
+})
+radio.forEach(radio => {
+    radio.addEventListener("click", culcHeight)
+})
